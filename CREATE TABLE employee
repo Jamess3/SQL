@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS employee (
+	id_card SERIAL PRIMARY KEY ,
+	first_name VARCHAR(128) NOT NULL,
+	last_name VARCHAR(128) NOT NULL,
+	datum_nastupu TIMESTAMP NOT NULL,
+	vypoved  TIMESTAMP NULL,
+	department VARCHAR(128) NOT NULL,
+	salary NUMERIC NULL,
+	is_new BOOLEAN NULL
+);
+
+DROP TABLE IF EXISTS employee ;
