@@ -1,4 +1,4 @@
-(pgAdmin 4 -PostgresSQL12) 
+(pgAdmin 4 -PostgreSQL12) 
 ----------------------------------------------------------------------------------------------
 INSERT INTO  employee (id_card, first_name, last_name, datum_nastupu, vypoved, department, salary, is_new)
 VALUES (5,'Jakub','Novak', '2010-04-16 08:01:00-05','2018-10-15 14:00:00-10', 'Vstrikovna',25000, False);
