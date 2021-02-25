@@ -1,0 +1,13 @@
+----------------------------------------------------------------------------------------------
+INSERT INTO  employee (id_card, first_name, last_name, datum_nastupu, vypoved, department, salary, is_new)
+VALUES (5,'Jakub','Novak', '2010-04-16 08:01:00-05','2018-10-15 14:00:00-10', 'Vstrikovna',25000, False);
+
+INSERT INTO  employee ( first_name, last_name, datum_nastupu, vypoved, department, salary, is_new)
+VALUES ('Petra','Novakova', '2010-04-16 08:01:00-05', null ,'Uctarna',25000, TRUE);
+------------------------------------------------------------------------------------------------
+INSERT INTO  employee ( first_name, last_name, datum_nastupu, vypoved, department, salary, is_new)
+VALUES ('Michal','Novak', '2010-04-16 08:01:00-05', null ,'Kvalita' ,25000, null);
+------------------------------------------------------------------------------------------------
+INSERT INTO  employee ( id_card,first_name, last_name, datum_nastupu, vypoved, department, salary, is_new)
+VALUES (4,N'Lukaš','Novak', '2010-04-16 08:01:00-05', null ,'Analýza' ,null, FALSE),
+       (3,N'Pepek','Novak', '2010-04-16 08:01:00-05', null ,'Vyvoj' ,null, null);
