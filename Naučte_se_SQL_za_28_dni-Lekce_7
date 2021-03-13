@@ -1,0 +1,37 @@
+Odpovědi 
+
+Lekce 7-
+
+1. SELECT name
+   FROM teamstats
+   GROUP BY name
+   HAVING AVG(hits/ab) < 0.250;
+   
+2.SELECT REPLACE(m,'A','k.A.P') as initials, code
+  FROM characters 
+  WHERE code = 32;
+--OR---
+  SELECT concat_ws('.',substr(lower(firstname),1,1),m,substr(lastname,1,1)) as initials
+  FROM characters 
+  WHERE code = 32;
+
+3.SELECT MAX(hits/ab)::numeric(2,2), MIN (hits/ab)::numeric(1)
+  FROM teamstats;
+  
+4.SELECT MAX(ab)
+  FROM teamstats;
+  
+5.SELECT MIN(ab)
+  FROM teamstats;
+
+6.SELECT MAX(ab),MIN(ab)
+  FROM teamstats;
+  
+7.SELECT concat_ws(', ',lastname,firstname,m)||code
+  FROM characters;
+  
+8.SELECT lastname,firstname,m
+  FROM characters;
+  
+9.SELECT lower(lastname),lower(firstname),lower(m)
+  FROM characters;
